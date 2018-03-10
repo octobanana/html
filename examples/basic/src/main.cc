@@ -5,6 +5,8 @@ using css = OB::Html::Css;
 #include <string>
 #include <iostream>
 
+std::string render_css();
+
 std::string render_css()
 {
   // css object
