@@ -479,7 +479,7 @@ public:
   }
 
   // array access to child Elements by order
-  Element& operator[](int _child)
+  Element& operator[](size_t _child)
   {
     auto& children = get_children();
     return children.at(_child);
@@ -515,6 +515,7 @@ public:
   Element& il(bool _inline)
   {
     is_inline_ = _inline;
+    return *this;
   }
 
 private:
